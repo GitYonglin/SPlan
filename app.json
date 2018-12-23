@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/car/car",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "食计划",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "食谱",
+      "iconPath": "icons/cookbook0.png",
+      "selectedIconPath": "icons/cookbook1.png"
+    },
+      {
+      "pagePath": "pages/car/car",
+      "text": "购物车",
+      "iconPath": "icons/car0.png",
+      "selectedIconPath": "icons/car1.png"
+    },
+      {
+      "pagePath": "pages/user/user",
+      "text": "用户",
+      "iconPath": "icons/user0.png",
+      "selectedIconPath": "icons/user1.png"
+    }
+  ]
+  }
+}

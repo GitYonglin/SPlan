@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <van-button type="primary">按钮</van-button>
+</view> -->
+<!-- <van-tabs swipeable animated class="tabs" sticky scroll-top="{{ scrollTop }}" bind:change="onChange">
+  <van-tab title="{{item}}{{index}}" wx:for="{{tabs}}">
+    <goods-list list="{{list[index]}}"></goods-list>
+  </van-tab>
+</van-tabs> -->
+
+<view class="main">
+  <view class="flex">
+    <view class="tabs">
+      <scroll-view class="scroll-x" scroll-with-animation scroll-x scroll-left="{{tabSite}}">
+        <view id="tab{{index + 1}}" wx:for="{{tabs}}"  class="item" >
+          <view class="title">
+            <view
+              class="tabs-text  {{ index+1 == tabActive ? 'active' : ''}}"
+              data-id="{{index + 1}}"
+              catchtap="ontab">
+              {{item}}
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="content">
+      <view class="content-flex">
+        <scroll-view class="scroll-x" 
+          bindtouchstart="touchStart"
+          bindtouchend="touchEnd"
+          bindscroll="move"
+          scroll-left="{{scrollSite}}"
+          scroll-with-animation scroll-x scroll-into-view="x{{scrollX}}">
+          <view wx:for="{{tabs}}" id="x{{index + 1}}" class="content-y">
+            <scroll-view class="scroll-y" scroll-y>
+              <view>
+                <goods-list list="{{list[index]}}"></goods-list>
+              </view>
+            </scroll-view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>
