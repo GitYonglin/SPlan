@@ -24,38 +24,29 @@
   </text>
 </view>
 <view class="main {{!hasUserInfo && canIUse ? 'ff' : ''}}">
-  <view class="flex">
-    <view class="tabs">
-      <scroll-view class="scroll-x" scroll-with-animation scroll-x scroll-left="{{tabSite}}">
-        <view id="tab{{index + 1}}" wx:for="{{tabs}}"  class="item" >
-          <view class="title">
-            <view
-              class="tabs-text  {{ index+1 == tabActive ? 'active' : ''}}"
-              data-id="{{index + 1}}"
-              catchtap="ontab">
-              {{item}}
-            </view>
-          </view>
-        </view>
+  <scroll-view class="tabs" scroll-with-animation scroll-x scroll-left="{{tabSite}}">
+    <view id="tab{{index}}" wx:for="{{tabs}}"
+      data-id="{{index}}"
+      catchtap="ontab"
+      class="tabs-item {{ index == tabActive ? 'active' : ''}}">
+      {{item}}
+    </view>
+  </scroll-view>
+  <swiper class="content"
+    current="{{current}}"
+    bindchange="setCurrent"
+    bindanimationfinish="setCurrent"
+    >
+    <swiper-item wx:for="{{tabs}}" id="x{{index + 1}}" class="content-y">
+      <scroll-view class="scroll-y" scroll-y>
+          <goods-list list="{{list[index]}}"></goods-list>
       </scroll-view>
+    </swiper-item>
+  </swiper>
+  <!-- <view class="content">
+    <view class="content-flex">
     </view>
-    <view class="content">
-      <view class="content-flex">
-        <scroll-view class="scroll-x" 
-          bindtouchstart="touchStart"
-          bindtouchend="touchEnd"
-          bindscroll="move"
-          scroll-left="{{scrollSite}}"
-          scroll-with-animation scroll-x scroll-into-view="x{{scrollX}}">
-          <view wx:for="{{tabs}}" id="x{{index + 1}}" class="content-y">
-            <scroll-view class="scroll-y" scroll-y>
-              <view>
-                <goods-list list="{{list[index]}}"></goods-list>
-              </view>
-            </scroll-view>
-          </view>
-        </scroll-view>
-      </view>
-    </view>
-  </view>
+  </view> -->
+  <!-- <view class="flex">
+  </view> -->
 </view>
