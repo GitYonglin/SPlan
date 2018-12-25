@@ -32,21 +32,16 @@
       {{item}}
     </view>
   </scroll-view>
-  <swiper class="content"
+  <swiper
+    class="content"
     current="{{current}}"
     bindchange="setCurrent"
     bindanimationfinish="setCurrent"
     >
     <swiper-item wx:for="{{tabs}}" id="x{{index + 1}}" class="content-y">
       <scroll-view class="scroll-y" scroll-y>
-          <goods-list list="{{list[index]}}"></goods-list>
+        <goods-list list="{{list[index]}}"></goods-list>
       </scroll-view>
     </swiper-item>
   </swiper>
-  <!-- <view class="content">
-    <view class="content-flex">
-    </view>
-  </view> -->
-  <!-- <view class="flex">
-  </view> -->
 </view>
