@@ -1,1 +1,99 @@
 /* pages/car/car.wxss */
+.manage {
+  height: 32px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background: linear-gradient(to right , rgb(255, 150, 21) 5% , rgb(255, 83, 38) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.manage-btn {
+  color: white;
+  margin: 0;
+  padding:0;
+  height: 28px;
+  line-height: 28px;
+  width: 56px;
+  background: transparent;
+  border: 0;
+  margin-right: 25rpx;
+}
+.car-number {
+  margin-left: 25rpx;
+  font-size: 32rpx;
+}
+.operation {
+  height: 96rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f9;
+  border-top: 1px solid #dddee1;
+}
+.operation .btn {
+  display: flex;
+  align-items: center;
+  margin-right: 20rpx;
+}
+.operation .all-check {
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+.van-checkbox__labe {
+  color: #80848f;
+}
+.operation .total {
+  color: #80848f;
+  font-size: 30rpx;
+  padding-right: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.total .price {
+  color: #ed3f14;
+}
+.total .number {
+  color: #2d8cf0;
+}
+button{
+  margin: 0;
+  padding: 0 25rpx;
+  border: 0;
+  color: white;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 80rpx;
+  background: linear-gradient(to right , rgb(255, 150, 21) 5% , rgb(255, 83, 38) 100%);
+
+}
+.clearing {
+  padding: 0 50rpx;
+}
+.manage-bottom-btn {
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: center;
+}
+.manage-bottom-btn button {
+  background: transparent;
+  height: 50rpx;
+  line-height: 46rpx;
+  border-radius: 50rpx;
+}
+.manage-bottom-btn .like-btn {
+  width: atuo;
+  color: rgb(255, 150, 21);
+  border: 1px solid rgb(255, 150, 21);
+  margin-right: 25rpx;
+}
+.manage-bottom-btn .delete-btn {
+  width: atuo;
+  color: rgb(255, 83, 38);
+  border: 1px solid rgb(255, 83, 38);
+}

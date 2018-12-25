@@ -1,0 +1,50 @@
+/* component/car-goods/car-goods.wxss */
+@import "../goods-list/goods-list.wxss";
+.main {
+  margin: 20rpx;
+  padding: 5px;
+  border-radius: 26rpx;
+  white-space: normal;
+  background-color:#FFF;
+}
+.item {
+  height:180rpx;
+}
+.content {
+  border-bottom: 0;
+}
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15rpx;
+}
+.number-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.number {
+  width: 168rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dddee1;
+  font-size: 28rpx;
+}
+.number .btn {
+  flex: 1;
+  text-align: center;
+  color: #80848f;
+}
+.number input {
+  height: 25rpx;
+  flex: 2;
+  text-align: center;
+  color: #1c2438;
+  border: 1px solid #dddee1;
+  border-top: 0;
+  border-bottom: 0;
+}
+

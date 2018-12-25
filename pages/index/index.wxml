@@ -17,8 +17,13 @@
     <goods-list list="{{list[index]}}"></goods-list>
   </van-tab>
 </van-tabs> -->
-
-<view class="main">
+<view class="btn-content" wx:if="{{!hasUserInfo && canIUse}}">
+  <button class="user-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取信息并注册 </button>
+  <text >
+    注册后才允许访问！
+  </text>
+</view>
+<view class="main {{!hasUserInfo && canIUse ? 'ff' : ''}}">
   <view class="flex">
     <view class="tabs">
       <scroll-view class="scroll-x" scroll-with-animation scroll-x scroll-left="{{tabSite}}">

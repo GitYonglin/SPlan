@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "car-goods": "../../component/car-goods/car-goods",
+    "van-checkbox": "vant-weapp/checkbox/index",
+    "van-tag": "vant-weapp/tag/index"
+  }
 }

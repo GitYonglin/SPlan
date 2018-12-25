@@ -1,9 +1,10 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
+    "pages/detail/detail",
     "pages/car/car",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",

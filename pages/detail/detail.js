@@ -1,36 +1,18 @@
-// pages/user/user.js
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [
-      {name: '套餐一'},
-      {name: '套餐2'},
-      {name: '套餐3'},
-      {name: '套餐4'},
-      {name: '套餐5'},
-      {name: '套餐6'},
-      {name: '套餐7777'},
-      {name: '套餐8'},
-      {name: '套餐9'},
-      {name: '套餐10'},
-      {name: '套餐11'},
-      {name: '套餐12'},
-      {name: '套餐13'},
-      {name: '套餐14'},
-      {name: '套餐15'},
-      {name: '套餐16'},
-      {name: '套餐17'},
-    ],
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad(options) {
+    wx.hideTabBar({});
   },
 
   /**

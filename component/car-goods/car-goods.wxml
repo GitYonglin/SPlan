@@ -1,0 +1,43 @@
+<!--component/car-goods/car-goods.wxml-->
+
+
+<checkbox-group bindchange="onChange">
+  <view class='main' wx:for="{{list}}">
+    <view class="item">
+      <view class="check">
+        <label class="checkbox">
+          <checkbox value="{{item.name}}" />
+        </label>
+      </view>
+      <view class='img-content'>
+        <text class="time">🕘12:12</text>
+        <image class='img' mode="aspectFit" src="https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png"></image>
+      </view>
+      <view class="content">
+        <view>
+          <text class="name">{{item.name}}</text>
+          <!-- <view>
+              <van-icon name="like" size=".9em" color="#999999" />
+            </view> -->
+        </view>
+        <view class="number-content">
+          <view class="number">
+            <view class="btn">-</view>
+            <input type="number" />
+            <view class="btn">+</view>
+          </view>
+        </view>
+        <view class="other">
+          <view>
+            <p class="price">￥9999.99</p>
+            <span class="or">/</span>
+            <p class="unit">9999.99g</p>
+          </view>
+          <view>
+            <text class='inventory'>库99+</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</checkbox-group>

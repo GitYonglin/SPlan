@@ -1,1 +1,124 @@
 /* pages/user/user.wxss */
+.top {
+  background: linear-gradient(to right , #FF3399 5% , #FF0066 100%);
+  height: 360rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50rpx;
+}
+.avatar {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+.avatar .image {
+  width: 168rpx;
+  height: 168rpx;
+  border-radius: 168rpx;
+  background-color: #000;
+  margin-right: 15rpx;
+}
+.avatar image {
+  width: 168rpx;
+  height: 168rpx;
+}
+.avatar .name {
+  color: white;
+}
+
+.top .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info .like {
+  margin-right: 30rpx;
+}
+.info .like,.car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info text {
+  margin-left: 15rpx;
+  color:#FFF;
+}
+.main {
+  /* padding-top: 370rpx; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rpx;
+  padding: 5px;
+}
+.order-form, .logistics, .day {
+  /* height: 268rpx; */
+  width: 100%;
+  background-color: #fff;
+  border-radius: 26rpx;
+  margin-bottom: 25rpx;
+}
+.main .title {
+  /* height: 48rpx; */
+  padding: 10rpx 25rpx;
+  border-bottom: 1px solid #e9eaec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32rpx;
+  color: #1c2438;
+}
+.main .content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tabbar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25rpx 0 10rpx 0;
+}
+.tabbar .icon {
+  height: 64rpx;
+  width: 64rpx;
+  background-color: #000;
+  margin-bottom: 15rpx;
+}
+.tabbar .text {
+  font-size: 28rpx;
+  color: #80848f;
+}
+.day .content {
+  /* width: 100%; */
+  /* height: 100%; */
+  white-space: nowrap;
+}
+
+.day .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f9;
+  margin: 15rpx;
+  display: inline-block;
+  vertical-align: top;
+}
+.day .item .image {
+  width: 168rpx;
+  height: 168rpx;
+  margin: 15rpx;
+}
+.day .item image {
+  width: 168rpx;
+  height: 168rpx;
+}
+.day .item .name {
+  text-align: center;
+  color: #1c2438;
+}

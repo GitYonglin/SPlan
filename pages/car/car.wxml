@@ -1,3 +1,31 @@
 <!--pages/car/car.wxml-->
-<text>pages/car/car.wxml</text>
-<view class="intro">欢迎使用代码片段，可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档</view>
+<view class="manage">
+  <text class="car-number">购物车(99)</text>
+  <button class="manage-btn" bindtap="onManage">{{ manage ? '完成' : '管理'}}</button>
+</view>
+
+<view style="width: 100%; padding: 32px 0 96rpx 0;">
+  <car-goods list="{{list}}"></car-goods>
+</view>
+
+<view class="operation" wx:if="{{!manage}}" hover-class="none" hover-stop-propagation="false">
+  <view class="all-check">
+    <van-checkbox value="{{ allCheck }}" bind:change="onAllChange">全选</van-checkbox>
+  </view>
+  <view class="btn">
+    <view class="total" hover-class="none" hover-stop-propagation="false">
+      <view>已选: <text class="number">999</text></view>
+      <view>合计: <text  class="price">￥9999.99</text></view>
+    </view>
+    <button class="clearing">结算</button>
+  </view>
+</view>
+<view class="operation manage-bottom-btn" wx:if="{{manage}}" hover-class="none" hover-stop-propagation="false">
+  <view class="all-check">
+    <van-checkbox value="{{ allCheck }}" bind:change="onAllChange">全选</van-checkbox>
+  </view>
+  <view class="btn">
+    <button class="like-btn">移入收藏</button>
+    <button class="delete-btn">删除</button>
+  </view>
+</view>

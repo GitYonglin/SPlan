@@ -1,2 +1,66 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class="top">
+  <view class="avatar">
+    <view class="image">
+      <image src="https://gw.alicdn.com/tps/TB1W_X6OXXXXXcZXVXXXXXXXXXX-400-400.png" lazy-load="true" mode="aspectFill" />
+    </view>
+    <view class="name">我的名字</view>
+  </view>
+  <view class="info">
+    <view class="like">
+      <icon type="success" size="24" color="#FFF" />
+      <text class="">999+</text>
+    </view>
+  </view>
+</view>
+<view class="main">
+  <view class="order-form">
+    <view class="title">
+      <text>我的订单</text>
+      <text>(999+) 〉</text>
+    </view>
+    <view class="content">
+      <view class="tabbar">
+        <view class="icon"></view>
+        <text class="text">待发货</text>
+      </view>
+      <view class="tabbar">
+        <view class="icon"></view>
+        <text class="text">已发货</text>
+      </view>
+      <view class="tabbar">
+        <view class="icon"></view>
+        <text class="text">待评价</text>
+      </view>
+      <view class="tabbar">
+        <view class="icon"></view>
+        <text class="text">退货/售后</text>
+      </view>
+    </view>
+  </view>
+  <view class="logistics">
+    <view class="title">
+      <text>物流信息</text>
+      <text>〉</text>
+    </view>
+    <view class="content">
+      商品已在路上
+    </view>
+  </view>
+  <view class="day">
+    <view class="title">
+      <text>今日食谱</text>
+      <text>开始烹饪 〉</text>
+    </view>
+      <view class="content">
+        <scroll-view class="scroll-x" scroll-with-animation scroll-x>
+          <view class="item" wx:for="{{list}}">
+            <view class="image">
+              <image src="https://gw.alicdn.com/tps/TB1W_X6OXXXXXcZXVXXXXXXXXXX-400-400.png" lazy-load="true" mode="aspectFill" />
+            </view>
+            <view class="name">{{item.name}}</view>
+          </view>
+        </scroll-view>
+      </view>
+  </view>
+</view>

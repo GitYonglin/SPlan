@@ -7,10 +7,11 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
 
 page {
   height: 100%;
+  background-color: #f2f2f2;
 }
 
 
@@ -19,4 +20,31 @@ page {
   width: 0;
   height: 0;
   color: transparent;
+}
+
+checkbox {
+  width: 34rpx;
+  height: 34rpx;
+}
+
+checkbox .wx-checkbox-input {
+  width: 34rpx;
+  height: 34rpx;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #3296fa;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 34rpx;
+  height: 34rpx;
+  line-height: 34rpx;
+  border-radius: 34rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
 }

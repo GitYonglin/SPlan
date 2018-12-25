@@ -1,36 +1,35 @@
 <!--component/goods-list/goods-list.wxml-->
-  <view class='main' wx:for="{{list}}">
-    <view class="item">
-      <view class='img-content'>
-        <image class='img' src="https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png"></image>
+<view class='main' wx:for="{{list}}">
+  <view class="item">
+    <view class='img-content'>
+      <text class="time">🕘12:12</text>
+      <image class='img' mode="aspectFit" src="https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png"></image>
+    </view>
+    <view class="content">
+      <view >
+        <text class="name" >{{item.name}}</text>
+        <!-- <view>
+          <van-icon name="like" size=".9em" color="#999999" />
+        </view> -->
       </view>
-          <view class="content">
-            <view class="name">
-              <view>
-                <text>{{item.name}}</text>
-              </view>
-              <view>
-                <van-icon name="like" size=".9em" color="#999999" />
-              </view>
-            </view>
-            <view style="flex: 1; display: flex;">
-              <view class="del">
-                  <!-- 欢迎使用代码片段，可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档 -->
-                <text class="del-text">欢迎使用代码片段，可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档</text>
-              </view>
-            </view>
-            <view class="other">
-              <view>
-                <p class="price">￥9999.99</p>
-                <span class="or">/</span>
-                <p class="unit">9999.99g</p>
-              </view>
-              <view>
-                <text class='inventory'>库99+</text>
-              </view>
-            </view>
+      <view style="flex: 1; display: flex;">
+        <view class="del">
+          <text class="del-text">欢迎使用代码片段，可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档</text>
+          <view class="del-tag">
+            <text class="tag-item" wx:for="{{5}}">标签{{item}}</text>
           </view>
+        </view>
+      </view>
+      <view class="other">
+        <view>
+          <p class="price">￥9999.99</p>
+          <span class="or">/</span>
+          <p class="unit">9999.99g</p>
+        </view>
+        <view>
+          <text class='inventory'>库99+</text>
+        </view>
+      </view>
     </view>
   </view>
-
-  <!-- <view class="intro">欢迎使用代码片段，可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档可在控制台查看代码片段的说明和文档</view> -->
+</view>
