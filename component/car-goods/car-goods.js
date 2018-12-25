@@ -21,6 +21,14 @@ Component({
   methods: {
     onChange(e) {
       console.log(e.detail.value);
+    },
+    noDetail() {
+      wx.navigateTo({
+        url: '/pages/detail/detail'
+      })
+    },
+    ttt(e) {
+      console.log('111111', e);
     }
   }
 })

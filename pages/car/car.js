@@ -7,7 +7,7 @@ Page({
   data: {
     manage: false,
     list: [
-      {name: '套餐一'},
+      {name: '套餐1'},
       {name: '套餐2'},
       {name: '套餐3'},
       {name: '套餐4'},

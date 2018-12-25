@@ -1,2 +1,46 @@
-<!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<!-- pages/detail/detail.wxml -->
+<view style="padding-bottom: 90rpx;">
+  <swiper class="swiper" indicator-dots autoplay circular indicator-active-color="#FFF">
+    <swiper-item wx:for="{{5}}" class="content-y">
+      <image mode="aspectFit" src="https://source.unsplash.com/375x18{{index % 10}}/" />
+    </swiper-item>
+  </swiper>
+  <view class="info">
+    <view class="content">
+      <text class="name">商品名称</text>
+      <text class="price">￥ 999.99</text>
+      <text class="inventory">库 99+</text>
+    </view>
+    <view class="brief">
+      品尝过五家的猪肚鸡,味道都大同小异。
+      我都没有看到哪一家是用猪肚包住整个鸡的做法，全是切了小块的猪肚和鸡肉散落在奶白的汤里面。
+      猪肚和鸡肉，我吃起来都觉得不像是炖煮了很长时间的样子,我觉得，如果用压力锅炖猪肚，因该5到10分钟就可以了。
+      还有那个最诱人的汤了，一看就知道是加了纯牛奶进去的，就慢慢炖煮的话，汤也不会这么白的，重要的是我们都吃出了牛奶的味道了啊。
+      我这个是简易快速版的，因为节约时间用到了压力锅来炖煮猪肚，如果周末在家，还是直接用砂锅小火慢慢炖煮吧，那样汤水才会更鲜美啊。
+    </view>
+  </view>
+  <view class="table-content">
+    <text class="title">食材表</text>
+    <view class="table" wx:for="{{['主料', '辅料', '酱料', '厨具']}}">
+      <view class="th">{{item}}</view>
+      <view class="tr" wx:for="{{5}}" wx:for-index="idx" wx:for-item="foot">
+        <view class="td1">食材{{foot}}</view>
+        <view class="td2">{{idx + 999}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="make">
+    <text class="title">烹饪介绍</text>
+    <view class="item" wx:for="{{5}}">
+      <!-- <text class="step">{{index + 1}}</text> -->
+      <image  mode="aspectFit" src="https://source.unsplash.com/128x12{{index % 10}}/"/>
+      <text class="explain">猪肚买回来用流动水搓洗干净，放入碗中，用盐或白醋分两次搓洗猪肚，并用水冲洗干净</text>
+    </view>
+  </view>
+</view>
+
+<view class="operation">
+  <button class="like">收藏</button>
+  <button class="car">加入购物车</button>
+  <button class="buy">立即购买</button>
+</view>

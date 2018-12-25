@@ -1,9 +1,9 @@
 <!--component/goods-list/goods-list.wxml-->
-<view class='main' wx:for="{{list}}">
+<view class='main' wx:for="{{list}}" bind:tap="noDetail">
   <view class="item">
     <view class='img-content'>
       <text class="time">🕘12:12</text>
-      <image class='img' mode="aspectFit" src="https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png"></image>
+      <image class='img' mode="aspectFit" src="https://source.unsplash.com/128x12{{index % 10}}/"></image>
     </view>
     <view class="content">
       <view >

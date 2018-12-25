@@ -1,22 +1,3 @@
-<!--index.wxml-->
-<!-- <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  <van-button type="primary">按钮</van-button>
-</view> -->
-<!-- <van-tabs swipeable animated class="tabs" sticky scroll-top="{{ scrollTop }}" bind:change="onChange">
-  <van-tab title="{{item}}{{index}}" wx:for="{{tabs}}">
-    <goods-list list="{{list[index]}}"></goods-list>
-  </van-tab>
-</van-tabs> -->
 <view class="btn-content" wx:if="{{!hasUserInfo && canIUse}}">
   <button class="user-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取信息并注册 </button>
   <text >
@@ -38,7 +19,7 @@
     bindchange="setCurrent"
     bindanimationfinish="setCurrent"
     >
-    <swiper-item wx:for="{{tabs}}" id="x{{index + 1}}" class="content-y">
+    <swiper-item wx:for="{{tabs}}" class="content-y">
       <scroll-view class="scroll-y" scroll-y>
         <goods-list list="{{list[index]}}"></goods-list>
       </scroll-view>

@@ -136,7 +136,6 @@ Page({
   },
 
   setCurrent(e) {
-    console.log(e);
     const width = this.data.width;
     const i = e.detail.current;
     this.setData({
@@ -144,7 +143,4 @@ Page({
       tabSite: Math.floor((i - 2) * (width / 4))
     });
   },
-  move(e) {
-    console.log(e);
-  }
 })

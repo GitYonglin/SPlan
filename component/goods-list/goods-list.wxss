@@ -24,6 +24,7 @@
 .img {
   height: 100%;
   width: 100%rpx;
+  margin-right: 15rpx;
 }
 .content {
   flex: 1;
@@ -98,6 +99,8 @@
   top: 0;
   left: 0;
   font-size: 24rpx;
-  background-color: rgba(0, 0, 0, .1);
-  border-radius: 15rpx
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 15rpx;
+  padding: 0 4rpx 2rpx 4rpx;
+  color: #FFF;
 }

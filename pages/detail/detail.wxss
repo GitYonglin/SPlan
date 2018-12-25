@@ -1,1 +1,143 @@
 /* pages/detail/detail.wxss */
+.swiper {
+  width: 100%;
+  height: 360rpx;
+}
+.swiper image, swiper-item  {
+  width: 100%;
+  height: 100%;
+}
+
+.info, .table-content {
+  margin: 15rpx;
+  padding: 15rpx;
+  border-radius: 28rpx;
+  background-color: #fff;
+}
+.info .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e9eaec;
+}
+.info .name {
+  color: #1c2438;
+  font-size: 1em;
+}
+.info .price {
+  font-size: .9em;
+  color: #ed3f14;
+}
+.info .inventory {
+  color: #80848f;
+  font-size: .7em;
+  align-self: flex-end;
+}
+.info .brief {
+  color: #495060;
+  font-size: .7em;
+  text-indent: 2em;
+}
+.foot{}
+.table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dddee1;
+}
+.th {
+  border-bottom: 2px solid #dddee1;
+}
+.tr {
+  display: flex;
+  color: #495060;
+  font-size: .8em;
+}
+.table .tr{
+  border-bottom: 1px solid #dddee1;
+
+}
+.table .tr:last-child{
+  border-bottom: 0;
+}
+.tr view, .th {
+  padding: 15rpx;
+}
+.td1{
+  flex: 2;
+  border-right: 1px solid #dddee1;
+}
+.td2{
+  flex: 1;
+  text-align: right;
+}
+
+.make {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 24rpx;
+}
+.title {
+  padding: 15rpx 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #dddee1;
+  /* background: linear-gradient(to left,  rgb(0, 200, 255), rgb(0, 150, 255), rgb(0, 220, 255));
+  color: white; */
+}
+.make .item {
+  /* height: 256rpx; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.make .step {
+  width: 32rpx;
+  height: 56rpx;
+  text-align: center;
+  line-height: 56rpx;
+  border-radius: 12rpx;
+  background: linear-gradient(to top,  rgb(0, 200, 255), rgb(0, 150, 255), rgb(0, 220, 255));
+  /* background: linear-gradient(to top,  rgba(0, 200, 255, .5), rgba(0, 150, 255, .5), rgba(0, 220, 255, .5)); */
+  color: white;
+}
+
+.make .explain {
+  flex: 1;
+  font-size: .8em;
+  color: #1c2438;
+  text-indent: 2em;
+  padding-left: 25rpx;
+}
+.make image {
+  height: 256rpx;
+  width: 256rpx;
+}
+.operation {
+  width: 100%;
+  height: 84rpx;
+  position: fixed;
+  display: flex;
+  bottom: 0;
+}
+.operation button {
+  border-radius: 0;
+  color: white;
+  border: 0;
+  font-size: .8em;
+  line-height: 84rpx;
+}
+.operation .like {
+  flex: 1;
+  color: #1c2438;
+}
+.operation .car {
+  flex: 2;
+  background: linear-gradient(to left , rgb(255, 110, 38), rgb(255, 83, 38));
+}
+.operation .buy {
+  flex: 2;
+  background: linear-gradient(to left , rgb(255, 210, 38), rgb(255, 183, 38));
+}
